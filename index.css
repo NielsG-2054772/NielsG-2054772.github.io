@@ -1,0 +1,42 @@
+body{
+  margin: 10px;
+  background-color: rgb(242, 255, 241)
+
+}
+
+#LogoBanner{
+  max-width: 200px;
+  position:relative;
+}
+
+#banner{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  background-color: rgb(140, 214, 143);
+  position: absolute;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  background-color: rgb(140, 214, 143);
+  color: rgb( 242, 243, 158);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: rgb(140, 214, 143);
+  background-color: rgb( 242, 243, 158);
+}
