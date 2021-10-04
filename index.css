@@ -1,48 +1,47 @@
-body{
+body {
   margin: 0;
   padding: 0;
   background: rgb(220, 253, 222);
   min-height: 100m;
 }
 
-nav{
-  width:100%;
+nav {
+  width: 100%;
   background: seagreen;
   overflow: auto;
   margin-bottom: 30px;
 }
 
-ul#navigation{
+ul#navigation {
   padding: 0;
   margin: 0 0 0 110px;
   list-style: none;
 }
 
-.button{
+.button {
   float: left;
 }
 
-.logo img{
+.logo img {
   position: absolute;
   top: 0;
   height: 90px;
   margin-top: 2px;
   margin-left: 10px;
-
 }
 
-nav a{
+nav a {
   width: 100px;
   display: block;
   padding: 20px 15px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  color:rgb(220, 253, 222);
+  color: rgb(220, 253, 222);
   text-align: center;
 }
 
-nav a:hover{
-  background:tomato;
+nav a:hover {
+  background: tomato;
   transition: 0.5s;
 }
 
@@ -53,31 +52,37 @@ div.item {
   text-align: center;
   /* The width of the container also implies margin around the images. */
   max-width: 15%;
-  margin-right: 20px;
-  margin-left: 50px;
-  margin-bottom: 20px;
-  border: 5px;
-  border-style:none solid none solid;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  border: 2px;
+  border-style: solid;
   border-color: green;
 }
+
+div.item:hover {
+  border-color: tomato;
+}
+
 img.articleimage {
   max-width: 100%;
 }
+
 .caption {
   /* Make the caption a block so it occupies its own line. */
   display: block;
 }
 
-#items{
-  margin: 100;
+#items {
+  margin: auto;
 }
 
-#footer{
-  position: absolute;
-  bottom: 90vmax;
+#footer {
+  margin: auto;
+  bottom: 0;
   max-width: 25%;
 }
 
-.navicon{
+.navicon {
   max-height: 50px;
 }
