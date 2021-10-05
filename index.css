@@ -1,15 +1,18 @@
-body {
+body, html {
   margin: 0;
   padding: 0;
   background: rgb(220, 253, 222);
-  min-height: 100m;
+  height: 100%;
+}
+
+.bg {
+  max-width: 100%;
 }
 
 nav {
   width: 100%;
   background: seagreen;
   overflow: auto;
-  margin-bottom: 30px;
 }
 
 ul#navigation {
@@ -46,11 +49,8 @@ nav a:hover {
 }
 
 div.item {
-  /* To correctly align image, regardless of content height: */
   float: left;
-  /* To horizontally center images and caption */
   text-align: center;
-  /* The width of the container also implies margin around the images. */
   max-width: 15%;
   margin-right: 2%;
   margin-left: 2%;
@@ -69,7 +69,6 @@ img.articleimage {
 }
 
 .caption {
-  /* Make the caption a block so it occupies its own line. */
   display: block;
 }
 
@@ -85,4 +84,48 @@ img.articleimage {
 
 .navicon {
   max-height: 50px;
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange;
+  }
 }
