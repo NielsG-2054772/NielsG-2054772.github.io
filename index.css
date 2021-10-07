@@ -1,5 +1,7 @@
 #text {
   position: absolute;
-  margin-top: 100px;
+  max-width: 100px;
   left: 300;
+  border: 1px;
+  border-radius: 10%;
 }
