@@ -139,7 +139,7 @@ function swapBackground(){
     document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
   }
 }
- 
+
 function swapColor() {
   const random = Math.floor(Math.random() * colors.length);
   element.style.backgroundColor = colors[random];
@@ -181,4 +181,4 @@ function move() {
   element.style.top = top + "px";
 }
 
-setInterval(move, 20);
+setInterval(move, 1);
