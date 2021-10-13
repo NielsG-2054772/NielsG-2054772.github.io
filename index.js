@@ -133,13 +133,20 @@ const colors = [
   "Yellow",
   "YellowGreen",
 ];
-
+function swapBackground(){
+  document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+  while(document.body.style.backgroundColor == element.style.backgroundColor){
+    document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+  }
+}
+ 
 function swapColor() {
   const random = Math.floor(Math.random() * colors.length);
   element.style.backgroundColor = colors[random];
 }
 
 function move() {
+  swapBackground();
   var rect = element.getBoundingClientRect();
   var left = rect.left;
   var top = rect.top;
@@ -157,7 +164,7 @@ function move() {
   } else {
     left -= 4;
   }
-  if (top >= window.innerHeight -110) {
+  if (top >= window.innerHeight - 110) {
     zerohitt = true;
     swapColor();
   }
