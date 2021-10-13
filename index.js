@@ -157,7 +157,7 @@ function move() {
   } else {
     left -= 4;
   }
-  if (top >= window.innerHeight - 60) {
+  if (top >= window.innerHeight -110) {
     zerohitt = true;
     swapColor();
   }
