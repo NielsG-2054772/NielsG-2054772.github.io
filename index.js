@@ -143,10 +143,10 @@ function swapBackground(){
 function swapColor() {
   const random = Math.floor(Math.random() * colors.length);
   element.style.backgroundColor = colors[random];
+  swapBackground();
 }
 
 function move() {
-  swapBackground();
   var rect = element.getBoundingClientRect();
   var left = rect.left;
   var top = rect.top;
@@ -162,7 +162,7 @@ function move() {
   if (zerohitl) {
     left += 2;
   } else {
-    left -= 4;
+    left -= 2;
   }
   if (top >= window.innerHeight - 110) {
     zerohitt = true;
@@ -175,10 +175,10 @@ function move() {
   if (zerohitt) {
     top -= 2;
   } else {
-    top += 3;
+    top += 2;
   }
   element.style.left = left + "px";
   element.style.top = top + "px";
 }
 
-setInterval(move, 1);
+setInterval(move, 10);
